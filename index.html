@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script> 
+    
+
+
+  <style>
+    body { margin: 0; }
+    #overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%; 
+    }
+    #webcam-video, #p5-canvas {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    #toggleButton {
+      position: absolute;
+      top: 10px; left: 10px;
+      padding: 5px 10px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="overlay">
+    <video id="webcam-video" autoplay></video>
+    <canvas id="p5-canvas"></canvas>
+  </div>
+
+  <button id="toggleButton">Toggle Background</button>
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>

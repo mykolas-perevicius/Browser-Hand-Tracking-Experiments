@@ -1,0 +1,23 @@
+body {
+  margin: 0; /* Remove default browser margins */
+  padding: 0; /* Remove default browser padding */
+}
+
+#overlay {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+  width: 100vw; /* Take up full viewport width */
+  height: 100vh; /* Take up full viewport height */
+}
+
+#webcam-video {
+  /* Adjust video size as needed */
+  width: 640px;
+  height: 480px;
+}
+
+#toggleButton {
+  /* Style your button here (margin, padding, etc.) */
+  margin: 20px; /* Add some margin around the button */
+}
